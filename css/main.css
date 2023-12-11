@@ -1,0 +1,530 @@
+*{
+    list-style: none;
+    
+}
+a{
+    text-decoration-line: none;
+}
+i{
+    font-weight: 900;
+}
+p{
+    color: #5a5a5a;
+    font-weight: 300;
+}
+#nav{
+    z-index: 999;
+    background-color: #040404e2;
+}
+#nav ul .active{
+    position: relative;
+}
+#nav ul li a{
+    position: relative;
+}
+#nav ul .a a:hover::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 100%;
+    left: 10px;
+    background-color: #fff;
+    animation-name: after;
+    animation-duration: .5s;
+}
+#nav ul .active::after{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 100%;
+    left: 10px;
+    background-color: #fff;
+    animation-name: after;
+    animation-duration: .5s;
+}
+@keyframes after {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 35px;
+    }
+    
+}
+#nav .dropdown-menu li:hover > a{
+    color: #0062D3 !important;
+}
+
+#nav .dropdown:hover::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    top: 100%;
+    left: 10px;
+    background-color: #fff;
+    animation-name: afterDropDown;
+    animation-duration: .3s;
+}
+@keyframes afterDropDown {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100px;
+    }
+    
+}
+#nav .dropdown:hover >.dropdown-menu , #nav .dropend:hover >.dropdown-menu{
+    display: block;
+    margin-top:0.3125rem;
+}
+
+#nav .dropend:hover >.dropdown-menu{
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+#home{
+    background-image:url("../images/hero-bg.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#home .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.49);
+}
+#home .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 2;
+}
+#home .caption h1{
+    font-size: 72px;
+}
+#home .caption p{
+    font-size: 40px;
+}
+#home .caption p::after{
+    content: '';
+    animation-name: animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation {
+    0%{
+        content: '|';
+    }
+    2%{
+        content:' D|';
+    }
+    4%{
+        content: 'De|';
+    }
+    6%{
+        content: 'Dev|';
+    }
+    8%{
+        content:' Deve|';
+    }
+    10%{
+        content: 'Devel|';
+    }
+    12%{
+        content: 'Develo|';
+    }
+    14%{
+        content: 'Develop|';
+    }
+    16%{
+        content:' Develope|';
+    }
+    18%{
+        content: 'Developer|';
+    }
+    20%{
+        content: 'Develope|';
+    }
+    22%{
+        content:' Develop|';
+    }
+    24%{
+        content: 'Develo|';
+    }
+    26%{
+        content: 'Devel|';
+    }
+    28%{
+        content: 'Deve|';
+    }
+    29%{
+        content:'Dev|';
+    }
+    30%{
+        content: 'De|';
+    }
+    31%{
+        content: 'Des|';
+    }
+    32%{
+        content: 'Desi|';
+    }
+    33%{
+        content: 'Desig|';
+    }
+    34%{
+        content: 'Design|';
+    }
+    35%{
+        content: 'Designe|';
+    }
+    36%{
+        content: 'Designer|';
+    }
+    37%{
+        content: 'Designe|';
+    }
+    38%{
+        content: 'Design|';
+    }
+    39%{
+        content: 'Desig|';
+    }
+    40%{
+        content: 'Desi|';
+    }
+    42%{
+        content: 'Des|';
+    }
+    45%{
+        content: 'De|';
+    }
+    47%{
+        content: 'D|';
+    }
+    49%{
+        content: '|';
+    }
+    50%{
+        content: 'P|';
+    }
+    51%{
+        content:' Ph|';
+    }
+    52%{
+        content: 'Pho|';
+    }
+    54%{
+        content: 'Phot|';
+    }
+    55%{
+        content:' Photo|';
+    }
+    56%{
+        content: 'Photog|';
+    }
+    57%{
+        content: 'Photogr|';
+    }
+    59%{
+        content: 'Photogra|';
+    }
+    60%{
+        content:' Photograp|';
+    }
+    61%{
+        content: 'Photograph|';
+    }
+    63%{
+        content: 'Photographe|';
+    }
+    64%{
+        content:' Photographer|';
+    }
+    66%{
+        content: 'Photographe|';
+    }
+    67%{
+        content: 'Photograph|';
+    }
+    69%{
+        content: 'Photograp|';
+    }
+    71%{
+        content:'Photogra|';
+    }
+    73%{
+        content: 'Photogr|';
+    }
+    74%{
+        content: 'Photog|';
+    }
+    76%{
+        content: 'Photo|';
+    }
+    77%{
+        content: 'Phot|';
+    }
+    80%{
+        content: 'Pho|';
+    }
+    82%{
+        content: 'Ph|';
+    }
+    83%{
+        content: 'P|';
+    }
+    85%{
+        content: '|';
+    }
+    86%{
+        content: 'F|';
+    }
+    87%{
+        content: 'Fr|';
+    }
+    89%{
+        content: 'Fre|';
+    }
+    91%{
+        content: 'Free|';
+    }
+    93%{
+        content: 'Freel|';
+    }
+    94%{
+        content: 'Freela|';
+    }
+    96%{
+        content: 'Freelan|';
+    }
+    97%{
+        content: 'Freelanc|';
+    }
+    99%{
+        content: 'Freelance|';
+    }
+    100%{
+        content: 'Freelancer|';
+    }
+}
+#home button{
+    position: fixed;
+    z-index: 9;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 50%;
+    background-color: #0062D3;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: 1s background-color;
+}
+#home button:hover{
+    background-color: #3d8ae2;
+}
+
+#about h2{
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+#about h2::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 100%;
+    left:0;
+    background-color: #0078FF;
+}
+
+#services .card i{
+    font-size: 48px;
+    margin-block: 50px;
+    margin-inline: auto;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 8px solid #0078FF;
+    border-radius: 50%;
+}
+#services .card:hover i{
+    background-color: #0078FF;
+    color: #fff;
+    border: 8px solid #CDE1F8;
+}
+
+
+#count{
+    background-image: url(../images/counters-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+#count .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0659b9d7;
+}
+#count .card i{
+    border: 8px solid #CDE1F8;
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    margin: auto;
+    z-index: 3;
+
+}
+#work .work-img{
+    overflow: hidden;
+}
+#work .work-img img{
+    transition: 1s transform;
+}
+#work .work:hover img{
+    transform: scale(1.3,1.3);
+}
+#work .icon{
+    font-size: 42px;
+    color: #0078FF;
+}
+
+
+#carousel{
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+#carousel .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0077ffbd;
+}
+
+#carousel .carousel-indicators button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+#blog .card .morgan img{
+    width:40px;
+    height: 40px;
+}
+
+
+#blog .card span{
+    transform:translatey(-50%);
+}
+
+#contact{
+    position: relative;
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#contact .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0077ffbd;
+}
+
+#contact .contact{
+    position: relative;
+}
+
+#contact .links li i{
+    border: 4px solid #0078FF;
+    border-radius: 50%;
+    padding: 8px;
+    color: #000;
+}
+#contact .links li:hover i{
+    border-color: #C4DDFA;
+    background-color: #0078FF;
+    color: #fff;
+}
+
+
+#footer{
+    background-color: #0062D3;
+
+}
+
+.title {
+    position: relative;
+    padding-bottom: 3px;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0062D3;
+}
+
+#contact h4{
+    position: relative;
+    font-size: 34px;
+}
+#contact h4::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: #0078FF;
+}
+#contact p ,#contact ul{
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#contact form input:focus ,#contact form textarea:focus {
+    border:1px solid #0078FF;
+    box-shadow: 0 0 0 4px #b1c8e9b6;
+}
+#contact form input , textarea{
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
+#contact form button{
+    border-radius: 30px ;
+    display:block;
+    margin:10px auto;
+    border: 5px solid #fff;
+    font-size: 20px;
+}
+#contact form button:hover{
+    background-color: #2D90FF;
+    border: 5px solid #CDE1F8
+}
